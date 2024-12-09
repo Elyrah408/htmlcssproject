@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image:url(../img/adminback.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+border-radius: 50%;
+height: 30px;
+width: 30px;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%; 
+    align-content: center;
+    justify-content: space-between;
+    
+
+
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+   }
+   
+   nav img:hover{
+   
+       border: 2px solid rgb(222, 58, 17);
+    }
+
+
+
+
+    
+.nav_links{
+
+    text-align: right;
+    flex: 1;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav_links ul li a{
+text-decoration: none;
+font-size: 15px;
+color: rgb(255, 255, 255);
+font-weight: 500;
+
+}
+
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: brown;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+
+}
+
+
+select{
+    background-color: transparent;
+    border: none;
+    column-rule-style: none;
+    color: #fffefe;
+    font-size: clamp(1rem, 2.5vw, 1rem);
+    margin-top: 5px;
+
+}
+
+section option{
+    background-color:  rgba(32, 32, 174, 0.763);;
+ 
+}
+
+
+.secConten{
+    width: 90%;
+    color: rgb(146, 28, 28);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    
+}
+
+.secConten h1{
+    font-size: 50px;
+
+}
+.secConten p{
+ margin: 10px 0 40px;
+ font-size: 15px;
+ color: white;
+}
+.secConten a{
+    color: white;
+}
+
+.home_btn{
+ border: 1px solid rgb(248, 248, 248);
+ position: relative;
+ padding: 15px 40px;
+ background-color: transparent;
+ display: inline-block;
+ text-decoration: none;
+ cursor: pointer;
+ border-radius: 5px;
+
+}
+
+.home_btn:hover{
+    border: 1px solid brown;
+    background-color: brown;
+    color: white;
+    transition: 2s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+
+
+
+.section2{
+    padding-top: 60px;
+    text-align: center;
+    margin: auto;
+}
+
+/* .row{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+.productitem {
+    border: 1px dashed rgb(71, 152, 227);
+    align-content: center;
+    height:100%;
+    color: #000000;
+    margin: 6px 10px 50px 10px;
+    align-items: center;
+    display: flex;
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+ 
+}
+
+#productphoto{
+    height: 25vh;
+    width: 30%;
+
+}
+
+#pname{
+    height: 100%;
+    width: 20%;
+    font-weight: 500;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+#pdesciption{
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    align-content: center;
+    font-weight: 600;
+    overflow: hidden;
+   
+   
+    
+
+}
+
+#price{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+#approve,#update,#delete,#view{
+    padding: 5px 25px 5px 25px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    
+}
+
+#view{
+    background-color:rgb(143, 50, 24);
+    margin:10px;
+
+}
+
+#approve{
+    background-color:rgb(19, 19, 81);
+    margin:10px;
+
+}
+
+
+#update{
+    margin:10px;
+    background-color:rgb(13, 63, 8);
+
+    
+}
+
+#delete{
+    margin-right: 10px;
+    background-color:rgb(76, 9, 9);
+  
+}
+
+ @media(max-width:1300px){
+    .productitem{
+        display: block;
+        width: 100%;
+    }
+    #productphoto,#pdesciption,#pname, #price{
+        width: 100%;
+        height:100%;
+        margin-bottom: 10px;
+
+    }
+
+} 
+
+@media(max-width:700px){
+
+    .secConten h1{
+        font-size: 20px;
+        
+    
+    }
+
+
+    .home_btn{
+        border: 1px solid rgb(255, 255, 255);
+        position: relative;
+        padding: 10px 20px;
+        background-color: transparent;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+       
+       }
+
+       .nav_links ul li{
+        display: block;
+       }
+
+
+       .nav_links{
+        position: absolute;
+        background-color: rgba(7, 8, 64, 0.927);
+        height: 100%;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+        display: none;
+       }
+
+       nav .fa{
+        display: block;
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        margin: 10px;
+       }
+       #cross{
+        color: #fff;
+       }
+    
+        .nav_links ul {
+            padding: 30px;
+        }
+
+        .nav_links ul{
+            background-color: rgba(7, 8, 64, 0.927);
+      
+        }
+
+        .nav_links ul li a{
+            text-decoration: none;
+            font-size: 15px;
+            color: rgb(226, 221, 221);
+            font-weight: 400;
+            
+            }
+
+            select{
+ 
+                display: block;
+                margin-left: 10px;
+                color: #fff;
+            
+            }
+
+
+
+
+    
+            #approve,#update,#delete,#view {
+                padding: 2px 10px 2px 10px;
+                margin: 2px;
+            }
+            /* #pname, #pdesciption{
+                font-weight: 200;
+               
+            } */
+
+            #productphoto{
+                width: 100%;
+                height:100%;
+
+            }
+
+            .mcontent button {
+  
+       
+                padding: 8px 16px;
+                font-size: 0.4rem;
+            }
+
+            /* 
+                margin-right: 200px;
+                margin-left: 10px;
+               
+            } */
+
+}
+
+
+@media(max-width:400px) {
+
+    .mcontent{
+    margin-right: 20px;
+    margin-left: 10px;
+
+    }
+
+    .mcontent button {
+  
+       
+        padding: 5px 10px;
+        font-size: 0.4rem;
+    }
+}
+
+
+
+.modal1{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.mcontent {
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    
+}
+
+#title1 {
+    margin: 0 0 10px;
+}
+
+#image1 {
+    width:100%;
+    border-radius: 5px;
+}
+
+#description {
+    margin: 10px 0;
+}
+
+.mcontent button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal-content button:hover {
+    background-color: #d32f2f;
+}
+   
+
+
+
+.socialicon .fa-brands{
+    margin-left: 10px;
+    color: brown;
+
+}

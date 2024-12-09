@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/adminback.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+border-radius: 50%;
+width: 30px;
+height: 30px;
+border: 1px solid white;
+margin-top: 30px;
+margin-left: 50px;
+
+}
+
+
+
+
+   
+   .logo:hover{
+   
+       border: 2px solid rgb(222, 58, 17);
+    }
+
+
+
+
+
+
+
+.secConten{
+    width: 30%;
+    height: 30vh;
+    color: rgb(146, 28, 28);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color:transparent;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    
+}
+
+
+.secConten h2{
+    font-size: 30px;
+    margin-top: 10px;
+    color: aliceblue;
+
+}
+ form{
+
+    margin-top: 25px;
+    display: block;
+    
+ }
+
+input{
+    text-align: center;
+    align-content: center;
+    height: 3vh;
+    width: 60%;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    display: table-cell;
+    margin-bottom: 10px;
+   
+}
+
+input:hover{
+border-color: blue;
+
+}
+
+.send{
+    height: 4vh;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(131, 30, 30);
+    border-radius: 10px;
+    font-weight:500;
+
+}
+#forgot{
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+
+
+}
+
+#forgot:hover{
+
+    color: rgb(131, 30, 30);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1000px){
+
+    input{
+
+        height: 3vh;
+        width: 50%;
+       
+    }
+   
+}
+
+
+
+@media(max-width:700px){
+
+    .secConten h1{
+        font-size: 20px;
+        
+    
+    }
+
+            
+.secConten{
+    width: 80%;
+    height: 30vh;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color:transparent;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    
+}
+
+form{
+
+    margin-top: 25px;
+    display: block;
+    
+ }
+
+
+select{
+ 
+    display: block;
+    margin-left: 10px;
+    color: #fff;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

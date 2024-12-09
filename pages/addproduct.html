@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family =Poppins:ital,wght@0,100;0,200;0,300;0,400;
+              0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1
+                        ,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                 
+<link rel="icon" type="" href="../img/logo3.jpg">
+<link rel="stylesheet" href="../css/adprodut.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+       <a href="index.html"><img src="../img/logo3.jpg" alt="Logo" class="logo"></a>
+    <div class="nav_links" id="navlinks">
+        <i class="fa fa-times-circle"  onclick="hidemenue()"></i>
+        <ul>
+
+     <li><a href="index.html">HOME</a></li>
+     <li><a href="about.html">ABOUT</a></li>
+     <li><a href="product.html">PRODUCT</a></li>
+     <li><a href="admindata.html">PRODUCT LIST</a></li>
+     <li><a href="addproduct.html">ADD PRODUCT</a></li>
+     <li><a href="admin.html" target="_blank" rel="noopener">LOGOUT</a></li>
+     <li><a href="contact.html">CONTACT</a></li>
+     <select  id="languSelect" >
+        <option value="">English</option>
+        <option value="">Francais</option>
+     </select>
+        </ul>
+        
+    </div>
+    <i class="fa fa-bars" id ="burger" onclick="showmenue()"></i> 
+    </nav>
+ <div class="secConten">
+    <h2>Ajoter produit</h2>
+    
+    <form action="" class="ogin">
+        <input type="text" placeholder="product name"  id="name"required>
+        <br>
+        <input type="text" placeholder="description" id="description" required >
+        <br>
+        <input type="text" placeholder="price" required id="price">
+        <br>
+        <input type="file" id="pimage" name="image" accept="image/*" required>
+        <br>
+        
+        <button class="send" id="send">Envoie</button>
+        <br>
+        
+
+
+    </form>
+
+ </div>
+    </section>
+
+
+
+
+
+
+    <script src="../js/index.js"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+</html>

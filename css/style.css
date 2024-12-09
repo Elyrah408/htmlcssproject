@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image:url(../img/backgr.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%; 
+    align-content: center;
+    justify-content: space-between;
+
+
+}
+
+nav img{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ border: 2px solid white;
+}
+
+nav img:hover{
+
+    border: 2px solid rgb(154, 64, 41);
+   }
+
+.nav_links{
+
+    text-align: right;
+    flex: 1;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav_links ul li a{
+text-decoration: none;
+font-size: 15px;
+color: white;
+
+}
+
+select{
+    background-color: transparent;
+    border: none;
+    column-rule-style: none;
+    color: #ffffff;
+    font-size: clamp(1rem, 2.5vw, 1rem);
+    margin-top: 5px;
+
+}
+
+section option{
+    background-color:  rgba(32, 32, 174, 0.763);;
+ 
+}
+
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: brown;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+
+}
+
+.secConten{
+    width: 90%;
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    
+}
+
+.secConten h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+.secConten p{
+
+ font-size: 15px;
+ color: white;
+ line-height: 1.4;
+}
+.secConten a{
+    color: white;
+}
+
+.home_btn{
+ border: 1px solid white;
+ position: relative;
+ padding: 15px 40px;
+ background-color: transparent;
+ display: inline-block;
+ text-decoration: none;
+ cursor: pointer;
+ border-radius: 5px;
+ margin-top: 80px;
+
+}
+
+.home_btn:hover{
+    border: 1px solid brown;
+    background-color: brown;
+    color: white;
+    transition: 2s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+@media(max-width:700px){
+
+    .secConten h1{
+        font-size: 20px;
+        
+    
+    }
+
+
+    .home_btn{
+        border: 1px solid white;
+        position: relative;
+        padding: 10px 20px;
+        background-color: transparent;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+       
+       }
+
+       .nav_links ul li{
+        display: block;
+       }
+
+
+       .nav_links{
+        position: absolute;
+        background-color: rgba(7, 8, 64, 0.927);
+        height: 100%;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+        display: none;
+      
+       }
+
+       nav .fa{
+        display: block;
+        font-size: 22px;
+        color: rgb(226, 226, 226);
+        cursor: pointer;
+        margin: 10px;
+       }
+    
+        .nav_links ul {
+            padding: 30px;
+        }
+
+        select{
+ 
+            display: block;
+            margin-left: 10px;
+        
+        }
+        
+}
+
+
+
+
+
+.section2{
+    padding-top: 100px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.section2 h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(3, 35, 72);
+    margin-bottom: 10px;
+
+}
+
+.section2 p{
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 1.4;
+    display: inline;
+   
+    
+
+
+}
+
+.row{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.catagory-col{
+    margin-top: 10px;
+    background-color: rgb(17, 92, 67);
+    border-radius: 10px;
+    display: block;
+    padding: 20px 12px;
+    flex-basis: 31%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffff;
+    font-style: bold;
+
+}
+.catagory-col:hover{
+    background-color: rgb(17, 88, 88);
+    transition: 1s;
+    
+}
+
+@media(max-width:700px) {
+
+    .row{
+     flex-direction: column;
+
+    }
+
+    .catagory-col{
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    
+}
+
+/* ----section3------------ 
+
+show some 4 cards for the new product
+*/
+
+.section3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.section3 h3{
+    color:  rgb(3, 35, 72);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cardsproduct{
+
+    border-radius: 10px;
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 20px;
+    overflow: hidden;
+    display: block;
+
+}
+
+.cardsproduct img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* .cardsproduct:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+
+} */
+
+.layer{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.layer:hover{
+    background-color: rgba(32, 32, 174, 0.763);
+    transition: 1s;
+
+}
+
+.layer p {
+ width: 100%;
+ position: absolute;
+ color: white;
+ font-weight: 400;
+ font-size: 22px;
+ transform: translateX(-50%);
+ left: 50%;
+ bottom: 0;
+ transition: 2s;
+
+}
+
+.layer:hover p{
+    bottom: 49%;
+    opacity: 1;
+ 
+}
+
+
+/* --section4 for the carosel-- */
+
+.sectionvdeo{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.sectionvdeo video{
+    height: 30vh;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+
+
+.footersec{
+    width: 100%;
+    text-align: center;
+    padding: 20px 5px;
+
+}
+.footersec h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(131, 15, 15);
+    margin-bottom: 20px;
+
+}
+
+.footersec p{
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+    line-height: 1.4;
+
+}
+
+.socialicon .fa-brands{
+    margin-left: 10px;
+    color: brown;
+    margin-top: 30px;
+
+}
+

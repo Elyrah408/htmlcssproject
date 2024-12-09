@@ -1,0 +1,321 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.header{
+  min-height: 90vh;
+  width: 100%;
+  background-image:url(../img/contact.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+
+nav{
+  display: flex;
+  padding: 2% 6%; 
+  align-content: center;
+  justify-content: space-between;
+
+
+}
+
+nav img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid white;
+}
+
+nav img:hover{
+
+  border: 2px solid rgb(154, 64, 41);
+ }
+
+.nav_links{
+
+  text-align: right;
+  flex: 1;
+}
+
+.nav_links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav_links ul li a{
+text-decoration: none;
+font-size: 15px;
+color: white;
+
+}
+
+select{
+  background-color: transparent;
+  border: none;
+  column-rule-style: none;
+  color: #ffffff;
+  font-size: clamp(1rem, 2.5vw, 1rem);
+  margin-top: 5px;
+
+}
+
+section option{
+  background-color:  rgba(32, 32, 174, 0.763);;
+
+}
+
+.nav_links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: brown;
+  margin: auto;
+  transition: 0.5s;
+
+}
+
+.nav_links ul li:hover::after{
+  width: 100%;
+
+}
+
+.secConten{
+  width: 90%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  
+}
+
+.secConten h1{
+  font-size: 50px;
+  color: #972311;
+
+}
+.secConten p{
+margin: 10px 0 40px;
+font-size: 15px;
+color:  #972311;
+}
+
+.secConten h4{
+
+  color: #972311;
+
+}
+
+
+
+.home_btn{
+border: 1px solid white;
+position: relative;
+padding: 15px 40px;
+background-color: transparent;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+border-radius: 5px;
+
+}
+
+.home_btn:hover{
+  border: 1px solid brown;
+  background-color: brown;
+  color: white;
+  transition: 2s;
+}
+
+nav .fa{
+  display: none;
+}
+
+
+
+@media screen and (max-width:700px){
+
+  .secConten h1{
+      font-size: 20px;
+      
+  
+  }
+
+
+  .home_btn{
+      border: 1px solid white;
+      position: relative;
+      padding: 10px 20px;
+      background-color: transparent;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+     
+     }
+
+     .nav_links ul li{
+      display: block;
+     }
+
+
+     .nav_links{
+      top: 0;
+      position: absolute;
+      background-color: rgba(7, 8, 64, 0.927);
+      height: 100%;
+      width: 200px;
+      right: -200px;
+      text-align: left;
+      z-index: 1;
+      transition: 2s;
+      display: none;
+    
+     } 
+
+     nav .fa{
+      display: block;
+      font-size: 22px;
+      color: rgb(226, 226, 226);
+      cursor: pointer;
+      margin: 10px;
+     }
+  
+      .nav_links ul {
+          padding: 30px;
+      }
+
+      select{
+
+          display: block;
+          margin-left: 10px;
+      
+      }
+      
+      
+}
+
+
+
+
+  .contact{
+   height: 100%;
+   padding: 40px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+
+       
+  }
+  
+  .contact h3{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color:  rgb(3, 35, 72);
+  }
+  
+ 
+  form{
+    margin-left: 30%;
+    margin-right: auto;
+  }
+
+  input{
+      padding: 10px 20px 10px 200px;
+      margin-bottom: 25px;
+      border-radius: 1px;
+      border-color: rgb(57, 57, 99);
+      text-align: left;
+      align-content: left;
+    
+  }
+
+  input:placeholder-shown{
+    border: 2px solid #972311;
+  }
+
+  label{
+    color:  rgb(3, 35, 72);
+    font-weight: 500;
+  }
+
+  #comment{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+#eml{
+    margin-right: 30px;
+
+}
+
+  .send{
+
+    margin-left: 20%;
+    margin-right: auto;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(51, 51, 142);
+    color: #ffffff;
+    font-weight: 200px;
+  }
+  .dispinput{
+    display: block;
+  }
+
+
+
+  @media(max-width:700px) {
+    
+    
+
+    form{
+        margin-left: auto;
+        margin-right: 100px;
+    }
+  }
+
+  .footersec{
+    width: 100%;
+    text-align: center;
+    padding: 20px 5px;
+
+}
+.footersec h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    color: rgb(3, 35, 72);
+
+
+}
+
+.footersec p{
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+   line-height: 1.4;
+
+}
+
+.socialicon .fa-brands{
+    margin-left: 10px;
+    color: brown;
+    margin-top: 50px;
+
+}
+
