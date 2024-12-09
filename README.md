@@ -1,7 +1,7 @@
 # html project Deployment Link
-https://elyrah408.github.io/htmlproject/pages/index.html
+https://elyrah408.github.io/htmlcssproject/pages/index.html
 
-https://elyrah408.github.io/htmlproject/pages/admin.html
+https://elyrah408.github.io/htmlcssproject/pages/admin.html
 
 
 I devided the web pages in two parts  and i used html,css,js for development
