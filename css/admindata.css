@@ -263,7 +263,7 @@ nav .fa{
 
 } 
 
-@media(max-width:700px){
+@media(max-width:1000px){
 
     .secConten h1{
         font-size: 20px;
